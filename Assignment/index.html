@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Sign Up Form</title>
+</head>
+<body>
+    <div class="my_form">
+        <h1>Create Account With Us</h1>
+        <form id="form_1">
+            <p id="form_text">Kindly enter your details.</p>
+            <!-- <p>First Name</p> -->
+            <input type="text" placeholder="First Name" id="firstname" required>
+            <!-- <p>Last Name</p> -->
+            <input type="text" placeholder="Last Name" id="lastname" required>
+            <!-- <p>Email</p> -->
+            <input type="text" placeholder="Email Address" id="email" required autocomplete="">
+            <!-- <p>Password</p> -->
+            <input type="password" placeholder="Password" id="password" required>
+            <!-- <p>Confirm Password</p> -->
+            <input type="password" placeholder="Confirm Password" id="confirmpassword" required> <br>
+
+            <input type="submit" id="submit_btn" value="Sign Up">
+            <!-- <button class="submit_btn" type="submit">Sign Up</button> -->
+            <p>Have an account with us?<a href="#">Sign in</a></p>
+        </form>
+    </div>
+    <script>
+        document.getElementById("form_1").addEventListener("submit", function(event) {
+            event.preventDefault(); // Prevents the default form submission
+
+            // Get form values
+            var firstname = document.getElementById("firstname").value;
+            var lastname = document.getElementById("lastname").value;
+            var email = document.getElementById("email").value;
+            var password = document.getElementById("password").value;
+            var confirmpassword = document.getElementById("confirmpassword").value;
+
+            // Display submitted details in the console
+            console.log("First Name: " + firstname);
+            console.log("Last Name: " + lastname);
+            console.log("Email: " + email);
+            console.log("Password: " + password);
+            console.log("Confirm Password: " + confirmpassword);
+        });
+    </script>
+</body>
+</html>

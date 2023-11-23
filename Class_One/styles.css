@@ -1,0 +1,32 @@
+ 
+
+ /* div, h2 - CSS Selectors {
+    text-align - property : left - value
+ }*/ 
+ /* CSS Selectors: class,Ids, pseudo-selectors, elements, attributes.
+ Assignment: Read more on attribute and pseudo-selectors. Find out the functions of 
+ pseudo-selectors, difference between pseudo class selector and pseudo element selector. */
+ /* Class selectors are reusable, but id selectors are unique, they are not reusable. */
+ /* Different ways to specify colors- RGB, HEX(hexcodes), HSL */
+ /* BEM Naming conventions */
+
+ .btn{
+    background-color: tomato;
+    color: #FFFFFF;
+    height: 55px;
+    width: 152px;
+    border: 1px solid lightgray;
+    border-radius: 12px;
+ }
+ .blue-btn{
+    background-color: dodgerblue;
+ }
+ .button_green{
+    background-color: #FFBC71;
+ }
+ .button_green-two{
+    background-color: rgb(60, 179,113);
+ }
+ a{
+   text-decoration: none;
+ }

@@ -1,0 +1,108 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url(../assets/image_six.jpg);
+    /* background-repeat: no-repeat; */
+    background-size: cover;
+}
+
+h1{
+    font-size: 2rem;
+    padding-top: 1rem;
+    margin-top: 3rem;
+    max-width: 25rem;
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+    width: 90%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: sandybrown;
+}
+p{
+    font-size: 16px;
+    color: #000;
+    text-align: center;
+}
+a{
+    font-size: 16px;
+    color: sandybrown;
+    padding-left: 5px;
+    text-decoration: none;
+}
+.my_form{
+    max-width: 25rem;
+    width: 100%;
+    margin: auto;
+}
+#form_1{
+    padding-top: 10px;
+    background-color: #FFF;
+    border-radius: 10px;
+    padding: 45px 45px;
+    height: auto;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+input{
+    max-width: 100%;
+    width: 100%;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    margin-bottom: 15px;
+    padding-left: 10px;
+    font-size: 15px;
+    height: 35px;
+    border: 1px solid sandybrown;
+    background-color: white;
+    border-radius: 7px;
+    border-color: blanchedalmond;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+#submit_btn{
+    margin-top: 15px;
+    max-width: 90%;
+    width: 100%;
+    padding: 1rem 1rem;
+    background-color: sandybrown;
+    margin-bottom: 20px;
+    border: 1px solid sandybrown;
+    font-size: 16px;
+    padding-bottom: 40px;
+    color: #111;
+    border-radius: 7px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#form_text{
+    margin-left: 1rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 400;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+
+@media (max-width: 800px) {
+    .my_form{
+      margin: 0 auto;
+    }  
+    }
+ 
+ @media (max-width: 425px) {
+    body{
+        background-image: none;
+        background-color: #333;
+    }   
+    .my_form{
+      margin: 0 auto;
+    }  
+      h1{
+        font-size: 1.5rem;
+      }
+      #form_text{
+        font-size: 1rem;
+    }
+} 

@@ -1,0 +1,209 @@
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+/* body{
+    width: 100vw;
+} */
+.grid_item{
+    /* height: 100px;
+    width: 150px; */
+    border-radius: 12px;
+    background-color: blue;
+    padding: 25px 35px;
+    color: #fff;
+   }
+   .wrapper{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #212121;
+    margin-top: 30px;
+    margin-bottom: 30px;
+   }
+   .grid_container{
+    display: grid;
+    max-width: 70rem;
+    width: 100%;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    background-color: tomato;
+    /* Note: 1rem is 10px */
+    /* The difference between rem and px is that rem is relative(relative to your screen size). It helps in designing
+    responsive web pages; while px is absolute*/
+   }
+.grid_container_two{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr;
+    gap: 20px;
+    height: 100vh;
+    margin: 20px auto;
+    width: 100%;
+}
+.header,.footer{
+    background-color: #2Ecc71;
+    padding: 20px;
+}
+.side_bar{
+    background-color: tomato;
+    padding: 20px;
+}
+.main_content{
+    background-color: gray;
+}
+.grid_container_one{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+    gap: 10px;
+    /* order: -1; */
+}
+.header{
+   margin-top: 30px;
+}
+.grid_cell{
+ background-color:#9B59B6 ;   
+color: white;
+text-align: center;
+padding: 20px;
+margin-top: 20px;
+}
+/* Place items does the work of both justify content and align items in CSS Grid */
+h1{
+    margin-top: 30px;
+}
+.grid_container_four{
+display: grid;
+grid-template-columns:repeat(4, 1fr);
+grid-template-areas: "header header header header"
+"main main.sidebar"
+"footer footer footer footer"
+;
+grid-template-rows: auto;
+}
+.item-a{
+   grid-area: header; 
+   background-color: #2Ecc71;
+   margin-top: 10px;
+   padding: 10px 15px;
+}
+.item-b> p{
+    margin-bottom: 10px;
+}
+.item-b{
+    grid-area: main; 
+    background-color: aqua;
+    margin-top: 30px;
+    padding: 25px 45px;
+ }
+ .item-c{
+    grid-area: sidebar; 
+    background-color: bisque;
+    margin-top: 30px;
+ }
+ .item-d{
+    grid-area: footer; 
+    background-color: cadetblue;
+    margin-top: 30px;
+ }
+
+
+ .my_projects{
+  margin: 1rem;
+  text-align: center;
+ }
+ .title{
+    font-size: 1.4rem;
+    font-weight: 600;
+ }
+ .description{
+    font-size: 1rem;
+    font-weight: 400;
+    /* visibility: hidden; */
+    /* display: none; */
+ }
+ .project_lists{
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+ }
+ .project_one{
+    margin-bottom: 1rem;
+    max-width: 500px;
+    width: 100%;
+    /* padding: 3rem, 1.5rem; */
+    border: 1px solid lightgray;
+ }
+ .p-description{
+    /* margin-bottom: 1rem; */
+    padding: 1rem 1.5rem;
+ }
+ .p-description_one{
+    /* margin-bottom: 1rem; */
+    padding: 1rem 1.5rem;  
+ }
+ .title{
+    text-align: center;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+ }
+ .my_header{
+    display: flex;
+    justify-content: space-between;
+ }
+ul{
+    display: flex;
+    width: 10rem;
+    justify-content: space-between;
+    /* gap: 2rem; */
+    list-style: none;
+    text-decoration: none;
+}
+.test_maxw{
+    max-width: 1000px;
+    width: 100%;
+    /* background-color: grey; */
+    background-color: grey;
+    border: 1px solid lightgrey;
+    border-radius: 5px 14px 5px 14px;
+    min-height: 400px;
+    height: fit-content;
+    margin: 0 auto;
+}
+
+.test_maxe{
+    max-width: 1000px;
+    width: 100%;
+    background-color: grey;
+    border: 1px solid lightgrey;
+    border-radius: 5px 14px 5px 14px;
+    min-height: 400px;
+    height: fit-content;
+    margin: 0 auto;
+}
+
+
+
+
+
+
+   /* CSS Media queries */
+
+   @media (max-width: 800px) {
+    .grid_container
+   {
+    grid-template-columns: repeat(2, 1fr);
+   }
+}
+
+   @media (max-width: 500px) {
+    .grid_container
+   {
+    display: block;
+   }
+   .project_lists{
+    flex-direction: column-reverse;
+   }
+}
