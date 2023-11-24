@@ -16,7 +16,7 @@
 }
 .header-text{
     background-image: linear-gradient(to bottom right, pink, purple);
-    /* -webkit-background-clip: text; */
+    -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     text-align: center;
 }
